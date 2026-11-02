@@ -1,3 +1,7 @@
+-- << Modules >> --
+local Signal = loadstring(game:HttpGet("https://raw.githubusercontent.com/grass042/Illegal-Soccer/refs/heads/main/Signal"))()
+local Dribbling = loadstring(game:HttpGet("https://raw.githubusercontent.com/grass042/Illegal-Soccer/refs/heads/main/Dribbling"))().init(UI)
+
 -- << Boilerplate >> --
 local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Consistt/Ui/main/UnLeaked"))()
 local Notifications = UILibrary:InitNotifications()
@@ -11,4 +15,13 @@ task.wait(1)
 local UI = UILibrary:Init()
 UI:UpdateKeybind(Enum.KeyCode.Z)
 
+-- << Main >> --
+local Signals = {
+	Autodribble = Signal.new()
+}
+
 -- << UI creation >> --
+Dribbling.init(UI, Signals)
+
+-- << Return >> --
+return Signals
