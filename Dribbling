@@ -1,7 +1,13 @@
 local Dribbling = {}
 
-function Dribbling.init(UI)
-	UI:NewTab("Dribbling")
+function Dribbling.init(UI, Signals)
+	local Tab = UI:NewTab("Dribbling")
+	
+	local AutoDribbleSection = Tab:NewSection("Auto dribbling")
+	
+	Tab:NewToggle("Auto dribble", false, function(value)
+		Signals.Autodribble:Fire(value)
+	end)
 end
 
 return Dribbling
