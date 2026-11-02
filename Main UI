@@ -1,6 +1,6 @@
 -- << Modules >> --
 local Signal = loadstring(game:HttpGet("https://raw.githubusercontent.com/grass042/Illegal-Soccer/refs/heads/main/Signal"))()
-local Dribbling = loadstring(game:HttpGet("https://raw.githubusercontent.com/grass042/Illegal-Soccer/refs/heads/main/Dribbling"))().init(UI)
+local Dribbling = loadstring(game:HttpGet("https://raw.githubusercontent.com/grass042/Illegal-Soccer/refs/heads/main/Dribbling"))()
 
 -- << Boilerplate >> --
 local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Consistt/Ui/main/UnLeaked"))()
