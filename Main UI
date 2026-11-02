@@ -1,0 +1,14 @@
+-- << Boilerplate >> --
+local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Consistt/Ui/main/UnLeaked"))()
+local Notifications = UILibrary:InitNotifications()
+
+UILibrary.title = "Illegal Soccer Exploit Hub"
+
+UILibrary:Introduction()
+
+task.wait(1)
+
+local UI = UILibrary:Init()
+UI:UpdateKeybind(Enum.KeyCode.Z)
+
+-- << UI creation >> --
