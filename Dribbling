@@ -1,6 +1,7 @@
 local Dribbling = {}
 
 function Dribbling.init(UI, Signals)
+	print(UI,Signals)
 	local Tab = UI:NewTab("Dribbling")
 	
 	local AutoDribbleSection = Tab:NewSection("Auto dribbling")
