@@ -1,0 +1,7 @@
+local Dribbling = {}
+
+function Dribbling.init(UI)
+	UI:NewTab("Dribbling")
+end
+
+return Dribbling
